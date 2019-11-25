@@ -25,7 +25,7 @@ table#t01 {
 	<center>
 		<h2>Login</h2>
 	</center>
-	<form action="registerUser" method="post">
+	<form action="login" method="post">
 		<table id="t01" align="center">
 			<tr>
 				<td>User Name :</td>
