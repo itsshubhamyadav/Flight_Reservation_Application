@@ -23,18 +23,10 @@ table#t01 {
 </head>
 <body>
 	<center>
-		<h2>User Registration</h2>
+		<h2>Login</h2>
 	</center>
 	<form action="registerUser" method="post">
 		<table id="t01" align="center">
-			<tr>
-				<td>First Name :</td>
-				<td><input type="text" name="firstName" /></td>
-			</tr>
-			<tr>
-				<td>Last Name :</td>
-				<td><input type="text" name="lastName" /></td>
-			</tr>
 			<tr>
 				<td>User Name :</td>
 				<td><input type="text" name="email" /></td>
@@ -44,12 +36,8 @@ table#t01 {
 				<td><input type="password" name="password" /></td>
 			</tr>
 			<tr>
-				<td>Confirm Password :</td>
-				<td><input type="password" name="confirmPassword" /></td>
-			</tr>
-			<tr>
 				<td></td>
-				<td><input type="submit" value="register" /></td>
+				<td><input type="submit" value="login" /></td>
 			</tr>
 		</table>
 	</form>
