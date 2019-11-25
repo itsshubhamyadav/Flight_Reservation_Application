@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register User</title>
+<title>Find Flights</title>
 <style>
 table, th, td {
 	border: 1px solid black;
@@ -22,28 +22,28 @@ table#t01 {
 </style>
 </head>
 <body>
-	<center>
-		<h2>Login</h2>
-	</center>
-	<center>
-		<h3 style="color: red; text-align: center;">${msg}</h3>
-	</center>
-	<form action="login" method="post">
+	<h2>Find Flights :</h2>
+	<form action="findFlights" method="post">
 		<table id="t01" align="center">
 			<tr>
-				<td>User Name :</td>
-				<td><input type="text" name="email" /></td>
+				<td>From :</td>
+				<td><input type="text" name="from" /></td>
 			</tr>
 			<tr>
-				<td>Password :</td>
-				<td><input type="password" name="password" /></td>
+				<td>To :</td>
+				<td><input type="text" name="to" /></td>
+			</tr>
+			<tr>
+				<td>Departure Date :</td>
+				<td><input type="text" name="departureDate" /></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" value="login" /></td>
+				<td><input type="text" name="search" /></td>
 			</tr>
 		</table>
-	</form>
 
+
+	</form>
 </body>
 </html>
