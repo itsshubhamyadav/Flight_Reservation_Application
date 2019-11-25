@@ -31,7 +31,7 @@ public class UserController {
 	public String login(@RequestParam("email") String email,@RequestParam("password") String password,ModelMap modelMap) {
 		User user = userRepository.findByEmail(email);
 		if(user.getPassword().equals(password)) {
-			return "login/findFlights";
+			return "findFlights";
 		}else {
 			modelMap.addAttribute("msg", "Invalid user name or password. Please try again.");
 		}
