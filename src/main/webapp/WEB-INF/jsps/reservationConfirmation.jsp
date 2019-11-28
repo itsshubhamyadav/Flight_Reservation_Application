@@ -7,6 +7,6 @@
 <title>Reservation Confirmation</title>
 </head>
 <body>
-${msg}
+<center>${msg}</center>
 </body>
 </html>

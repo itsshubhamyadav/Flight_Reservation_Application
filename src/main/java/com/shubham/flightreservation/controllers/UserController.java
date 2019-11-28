@@ -13,30 +13,38 @@ import com.shubham.flightreservation.repos.UserRepository;
 
 @Controller
 public class UserController {
-	
+
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	@RequestMapping("/showReg")
 	public String showRegistrationPage() {
 		return "login/registerUser";
 	}
-	@RequestMapping(value="/registerUser",method=RequestMethod.POST)
+
+	@RequestMapping(value = "/registerUser", method = RequestMethod.POST)
 	public String register(@ModelAttribute("user") User user) {
 		userRepository.save(user);
 		return "login/login";
-		
+
 	}
-	@RequestMapping(value="/login",method=RequestMethod.POST)
-	public String login(@RequestParam("email") String email,@RequestParam("password") String password,ModelMap modelMap) {
+
+	@RequestMapping("/showLogin")
+	public String showLoginPage() {
+		return "login/login";
+	}
+
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	public String login(@RequestParam("email") String email, @RequestParam("password") String password,
+			ModelMap modelMap) {
 		User user = userRepository.findByEmail(email);
-		if(user.getPassword().equals(password)) {
+		if (user.getPassword().equals(password)) {
 			return "findFlights";
-		}else {
+		} else {
 			modelMap.addAttribute("msg", "Invalid user name or password. Please try again.");
 		}
 		return "login/login";
-		
+
 	}
 
 }

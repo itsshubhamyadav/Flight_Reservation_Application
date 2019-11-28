@@ -3,6 +3,7 @@ package com.shubham.flightreservation.services;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.shubham.flightreservation.dto.ReservationRequest;
 import com.shubham.flightreservation.entities.Flight;
@@ -12,6 +13,7 @@ import com.shubham.flightreservation.repos.FlightRepository;
 import com.shubham.flightreservation.repos.PassengerRepository;
 import com.shubham.flightreservation.repos.ReservationRepository;
 
+@Service
 public class ReservationServiceImpl implements ReservationService{
 
 	@Autowired
