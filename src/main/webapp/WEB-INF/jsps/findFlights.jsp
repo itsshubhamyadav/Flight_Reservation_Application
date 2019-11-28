@@ -39,7 +39,7 @@ table#t01 {
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="text" name="search" /></td>
+				<td><input type="submit" name="search" /></td>
 			</tr>
 		</table>
 
