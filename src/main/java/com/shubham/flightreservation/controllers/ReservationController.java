@@ -8,6 +8,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.shubham.flightreservation.dto.ReservationRequest;
 import com.shubham.flightreservation.entities.Flight;
 import com.shubham.flightreservation.repos.FlightRepository;
 
@@ -22,6 +23,11 @@ public class ReservationController {
 		Optional<Flight> flight = flightRepository.findById(flightId);
 		modelMap.addAttribute("flight", flight.get());
 		return "completeReservation";
+		
+	}
+	@RequestMapping("/showCompleteReservation")
+	public String completeReservation(ReservationRequest reservationRequest) {
+		return null;
 		
 	}
 
