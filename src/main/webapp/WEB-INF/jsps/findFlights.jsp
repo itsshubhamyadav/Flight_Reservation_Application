@@ -22,7 +22,7 @@ table#t01 {
 </style>
 </head>
 <body>
-	<h2>Find Flights :</h2>
+	<h2><center>Find Flights :</center></h2>
 	<form action="findFlights" method="post">
 		<table id="t01" align="center">
 			<tr>

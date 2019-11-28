@@ -26,7 +26,7 @@ table#t01 {
 <body>
 
 	<table id="t01" align="center">
-		<h2>Complete Reservation</h2>
+		<h2><center>Complete Reservation</center></h2>
 		<tr>
 			<th>Airlines</th>
 			<th>Departure City</th>
@@ -40,7 +40,7 @@ table#t01 {
 		</tr>
 	</table>
 	<form action="completeReservation" method="post">
-		<h2>Passengers Details</h2>
+		<h2><center>Passengers Details</center></h2>
 		<table id="t01" align="center">
 			<tr>
 				<td>First Name :</td>
@@ -59,7 +59,7 @@ table#t01 {
 				<td><input type="text" name="passengerPhone" /></td>
 			</tr>
 		</table>
-		<h2>Card Details</h2>
+		<h2><center>Card Details</center></h2>
 		<table id="t01" align="center">
 			<tr>
 				<td>Name on the card :</td>
